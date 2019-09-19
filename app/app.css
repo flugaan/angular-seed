@@ -10,6 +10,7 @@ body {
 
 .pageHeader {
   text-align: center;
+  font-size: 50px;
 }
 
 a {
@@ -65,12 +66,20 @@ li a:hover {
 /* Style the counter cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
+  /*padding: 16px;*/
   text-align: center;
   background-color: #f1f1f1;
   transition: 0.3s;
   margin-bottom: 50px;
   height: 450px;
+  display: block;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card > img {
+  height: 150px;
+  object-fit: cover;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
@@ -87,6 +96,6 @@ li a:hover {
 }
 
 .container {
-  padding: 2px 16px;
+  padding: 16px;
   /*height: 200px;*/
 }
