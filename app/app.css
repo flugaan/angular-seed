@@ -1,25 +1,29 @@
-/* app css stylesheet */
-
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+body {
+  margin: 0px;
+  padding: 0px;
 }
 
-.menu:before {
-  content: "[";
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-.menu:after {
-  content: "]";
+li {
+  float: left;
 }
 
-.menu > li {
-  display: inline;
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.menu > li + li:before {
-  content: "|";
-  padding-right: 0.3em;
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
 }

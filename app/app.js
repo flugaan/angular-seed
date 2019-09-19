@@ -1,14 +1,37 @@
-'use strict';
+(function(){
 
-// Declare app level module which depends on views, and core components
-angular.module('myApp', [
-  'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
-]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
+  var app = angular.module('app', ['ui.router']);
 
-  $routeProvider.otherwise({redirectTo: '/view1'});
-}]);
+  app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+
+    $urlRouterProvider.otherwise('/');
+
+    $stateProvider
+      .state('home', {
+        url: '/',
+        templateUrl: '/templates/home.html',
+        controller: 'HomeController',
+        controllerAs: 'home'
+      })
+      .state('news', {
+        url: '/news',
+        templateUrl: '/templates/news.html',
+        controller: 'NewsController',
+        controllerAs: 'news'
+      })
+      .state('team', {
+        url: '/team',
+        templateUrl: '/templates/team.html',
+        controller: 'TeamController',
+        controllerAs: 'team'
+      })
+      .state('games', {
+        url: '/games',
+        templateUrl: '/templates/games.html',
+        controller: 'GamesController',
+        controllerAs: 'games'
+      });
+
+  }]);
+
+}());
