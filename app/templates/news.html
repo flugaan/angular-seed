@@ -1,1 +1,13 @@
-<h1>{{ news.message }}</h1>
+<h1 class="pageHeader">News</h1>
+
+<div class="row">
+  <div  ng-repeat="article in news.articles" class="column">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmobndiFjK6l-X0dd56gs9Dq__iUkmxczkO_hh_C_yzLfwPZpX" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h3><b>{{ article.header }}</b></h3>
+        <p>{{ article.text }}</p>
+      </div>
+    </div>
+  </div>
+</div>
