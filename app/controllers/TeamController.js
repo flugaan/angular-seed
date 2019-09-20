@@ -1,13 +1,21 @@
 (function(){
 
   angular.module('app')
-    .controller('TeamController', ['$state', TeamController]);
+    .controller('TeamController', ['$state', 'firebaseService', TeamController]);
 
-  function TeamController($state){
+  function TeamController($state, firebaseService){
 
     var vm = this;
 
-    vm.message = 'Team';
+    var onPlayersComplete = function(data){
+      vm.players = data;
+    }
+
+    var onError = function(reason){
+      vm.error = 'Error fetching the data';
+    }
+
+    firebaseService.getPlayers('men').then(onPlayersComplete, onError);
 
   }
 

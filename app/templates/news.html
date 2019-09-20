@@ -1,11 +1,11 @@
 <h1 class="pageHeader">News</h1>
 
-<div class="row">
-  <div  ng-repeat="article in news.articles" class="column">
+<div class="newsRow">
+  <div  ng-repeat="article in news.articles" class="newsColumn">
     <a ui-sref="news_article({id: article.id})">
-      <div class="card">
+      <div class="newsCard">
         <img src="{{ article.image }}" alt="Image" style="width:100%">
-        <div class="container">
+        <div class="newsContainer">
           <h3><b>{{ article.title }}</b></h3>
           <p>{{ article.ingress }}</p>
         </div>

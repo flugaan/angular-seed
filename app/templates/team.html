@@ -1,1 +1,22 @@
-<h1>{{ team.message }}</h1>
+<h1 class="pageHeader">Squad Mens Team</h1>
+
+<div class="playersRow">
+  <div  ng-repeat="player in team.players" class="playersColumn">
+    <a ui-sref="home">
+      <div class="playersCard">
+        <div class="grid-container">
+          <div class="item1">
+            <svg viewBox="0 0 56 18">
+              <text x="0" y="30">{{ player.squadnumber }}</text>
+            </svg>
+          </div>
+          <div class="item2"><img src="{{ player.image }}" alt="Image" class="playerCardPortrait"></div>
+          <div class="item3">
+            <div class="playerFirstname">{{ player.firstname }}</div>
+            <div class="playerLastname">{{ player.lastname }}</div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
