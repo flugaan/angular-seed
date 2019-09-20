@@ -19,6 +19,12 @@
         controller: 'NewsController',
         controllerAs: 'news'
       })
+      .state('news_article', {
+        url: '/news/:id',
+        templateUrl: '/templates/newsArticle.html',
+        controller: 'NewsArticleController',
+        controllerAs: 'newsArticle'
+      })
       .state('team', {
         url: '/team',
         templateUrl: '/templates/team.html',

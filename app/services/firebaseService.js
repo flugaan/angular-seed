@@ -24,8 +24,24 @@
                 });
     };
 
+    var getArticle = function(id){
+      return $firebaseObject(firebase.database().ref().child('articles/' + id))
+                .$loaded().then(function(data) {
+                    return data;
+                });
+    };
+
+    var getPlayers = function(team){
+      return $firebaseObject(firebase.database().ref().child('teams/' + team + '/'))
+                .$loaded().then(function(data) {
+                    return data;
+                });
+    };
+
     return {
-        getAllArticles: getAllArticles
+        getAllArticles: getAllArticles,
+        getArticle: getArticle,
+        getPlayers: getPlayers
     };
 
   };

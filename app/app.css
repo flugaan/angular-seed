@@ -99,3 +99,17 @@ li a:hover {
   padding: 16px;
   /*height: 200px;*/
 }
+
+/*-------------News Article---------------------*/
+.articleImg {
+  /*padding-bottom: 1%;*/
+  object-fit: cover;
+}
+
+.newsText {
+  padding: 0 300px;
+}
+
+.newsText > p {
+  padding: 0 200px;
+}
