@@ -276,7 +276,7 @@ text{
       'image'
       'info';
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1.3fr 1fr;
     margin-top: 0;
   }
 }
@@ -303,7 +303,7 @@ text{
 }
 
 .playerInfoSquadnumber {
-  font-size: 35px;
+  font-size: 50px;
   font-weight: bold;
   fill: #f1f1f1;
 }
