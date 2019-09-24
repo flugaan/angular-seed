@@ -38,10 +38,18 @@
                 });
     };
 
+    var getPlayer = function(team, id){
+      return $firebaseObject(firebase.database().ref().child('teams/' + team + '/' + id + '/'))
+                .$loaded().then(function(data) {
+                    return data;
+                });
+    };
+
     return {
         getAllArticles: getAllArticles,
         getArticle: getArticle,
-        getPlayers: getPlayers
+        getPlayers: getPlayers,
+        getPlayer: getPlayer
     };
 
   };

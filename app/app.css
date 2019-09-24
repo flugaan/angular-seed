@@ -254,6 +254,67 @@ text{
   margin: 50px auto;
 }
 
+/*------------------------Player page-----------------------------*/
+.playerGridContainer {
+  /*background-color: red;*/
+  display: grid;
+  grid-template-areas:
+    'image info';
+  grid-gap: 10px;
+  background-color: white
+  padding: 10px;
+  /*margin-top: 100px;
+  height: 100%;*/
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+  .playerGridContainer {
+    grid-template-areas:
+      'image'
+      'info';
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    margin-top: 0;
+  }
+}
+
+.playerGridContainer > div {
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+}
+
+.playerGridItem1 {
+  grid-area: image;
+}
+
+.playerGridItem1 > img {
+  margin-bottom: -5px;
+}
+
+.playerGridItem2 {
+  grid-area: info;
+}
+
+.playerInfoHeader {
+  font-size: 4px;
+  font-weight: bold;
+}
+
+.playerInfoSquadnumber {
+  font-size: 35px;
+  font-weight: bold;
+  fill: #f1f1f1;
+}
+
+.playerInfoText {
+  font-size: 2px;
+}
+
+.alignRight {
+  text-align: right;
+}
 
 
 

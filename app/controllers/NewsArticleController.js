@@ -8,7 +8,6 @@
     var vm = this;
 
     var onArticlesComplete = function(data){
-      $log.debug(data);
       vm.article = data;
     }
 
@@ -17,7 +16,6 @@
     }
 
     firebaseService.getArticle($stateParams.id).then(onArticlesComplete, onError);
-
   }
 
 }());

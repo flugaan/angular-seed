@@ -31,6 +31,12 @@
         controller: 'TeamController',
         controllerAs: 'team'
       })
+      .state('player', {
+        url: '/player/:id',
+        templateUrl: '/templates/player.html',
+        controller: 'PlayerController',
+        controllerAs: 'player'
+      })
       .state('games', {
         url: '/games',
         templateUrl: '/templates/games.html',

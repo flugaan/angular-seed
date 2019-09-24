@@ -3,7 +3,7 @@
 <div class="positionHeader">Goalkeepers</div>
 <div class="playersRow">
   <div ng-repeat="player in team.players" ng-if="player.position=='Goalkeeper'" class="playersColumn">
-    <a ui-sref="home">
+    <a ui-sref="player({id: player.squadnumber})">
       <div class="playersCard">
         <div class="grid-container">
           <div class="item1">
@@ -29,7 +29,7 @@
 <div class="positionHeader">Defenders</div>
 <div class="playersRow">
   <div ng-repeat="player in team.players" ng-if="player.position=='Defender'" class="playersColumn">
-    <a ui-sref="home">
+    <a ui-sref="player({id: player.squadnumber})">
       <div class="playersCard">
         <div class="grid-container">
           <div class="item1">
@@ -55,7 +55,7 @@
 <div class="positionHeader">Midfielders</div>
 <div class="playersRow">
   <div ng-repeat="player in team.players" ng-if="player.position=='Midfielder'" class="playersColumn">
-    <a ui-sref="home">
+    <a ui-sref="player({id: player.squadnumber})">
       <div class="playersCard">
         <div class="grid-container">
           <div class="item1">
@@ -81,7 +81,7 @@
 <div class="positionHeader">Forwards</div>
 <div class="playersRow">
   <div ng-repeat="player in team.players" ng-if="player.position=='Forward'" class="playersColumn">
-    <a ui-sref="home">
+    <a ui-sref="player({id: player.squadnumber})">
       <div class="playersCard">
         <div class="grid-container">
           <div class="item1">

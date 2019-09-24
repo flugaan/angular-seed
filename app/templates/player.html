@@ -1,0 +1,22 @@
+<div class="playerGridContainer">
+  <div class="playerGridItem1">
+    <img src="{{ player.player.image }}" alt="Image" class="playerCardPortrait">
+  </div>
+  <div class="playerGridItem2">
+    <svg viewBox="0 0 56 18">
+      <text x="100%" y="21" z="1" text-anchor="end" class="playerInfoSquadnumber" >{{ player.player.squadnumber }}</text>
+
+      <text x="2" y="0" z="2" class="playerInfoHeader" >{{ player.player.firstname }} {{ player.player.lastname }}</text>
+
+      <text x="2" y="5" z="2" class="playerInfoText">
+        <tspan x="12" y="5" text-anchor="end">Position:</tspan>
+        <tspan x="13" y="5" class="alignRight">{{ player.player.position }}</tspan>
+        <tspan x="12" y="10" text-anchor="end">Age:</tspan>
+        <tspan x="13" y="10" class="alignRight">{{ player.player.age }}</tspan>
+        <tspan x="12" y="15" text-anchor="end">Nationality:</tspan>
+        <tspan x="13" y="15" class="alignRight">{{ player.player.nationality }}</tspan>
+      </text>
+
+    </svg>
+  </div>
+</div>
