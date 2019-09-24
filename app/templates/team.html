@@ -1,19 +1,102 @@
 <h1 class="pageHeader">Squad Mens Team</h1>
 
+<div class="positionHeader">Goalkeepers</div>
 <div class="playersRow">
-  <div  ng-repeat="player in team.players" class="playersColumn">
+  <div ng-repeat="player in team.players" ng-if="player.position=='Goalkeeper'" class="playersColumn">
     <a ui-sref="home">
       <div class="playersCard">
         <div class="grid-container">
           <div class="item1">
             <svg viewBox="0 0 56 18">
-              <text x="0" y="30">{{ player.squadnumber }}</text>
+              <text x="5" y="25" class="squadNumber" >{{ player.squadnumber }}</text>
             </svg>
           </div>
           <div class="item2"><img src="{{ player.image }}" alt="Image" class="playerCardPortrait"></div>
           <div class="item3">
-            <div class="playerFirstname">{{ player.firstname }}</div>
-            <div class="playerLastname">{{ player.lastname }}</div>
+            <svg viewBox="0 0 56 18">
+              <text x="0" y="10">
+                <tspan x="0" y="5" class="playerFirstname">{{ player.firstname }}</tspan>
+                <tspan x="0" y="12" class="playerLastname">{{ player.lastname }}</tspan>
+              </text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="positionHeader">Defenders</div>
+<div class="playersRow">
+  <div ng-repeat="player in team.players" ng-if="player.position=='Defender'" class="playersColumn">
+    <a ui-sref="home">
+      <div class="playersCard">
+        <div class="grid-container">
+          <div class="item1">
+            <svg viewBox="0 0 56 18">
+              <text x="5" y="25" class="squadNumber" >{{ player.squadnumber }}</text>
+            </svg>
+          </div>
+          <div class="item2"><img src="{{ player.image }}" alt="Image" class="playerCardPortrait"></div>
+          <div class="item3">
+            <svg viewBox="0 0 56 18">
+              <text x="0" y="10">
+                <tspan x="0" y="5" class="playerFirstname">{{ player.firstname }}</tspan>
+                <tspan x="0" y="12" class="playerLastname">{{ player.lastname }}</tspan>
+              </text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="positionHeader">Midfielders</div>
+<div class="playersRow">
+  <div ng-repeat="player in team.players" ng-if="player.position=='Midfielder'" class="playersColumn">
+    <a ui-sref="home">
+      <div class="playersCard">
+        <div class="grid-container">
+          <div class="item1">
+            <svg viewBox="0 0 56 18">
+              <text x="5" y="25" class="squadNumber" >{{ player.squadnumber }}</text>
+            </svg>
+          </div>
+          <div class="item2"><img src="{{ player.image }}" alt="Image" class="playerCardPortrait"></div>
+          <div class="item3">
+            <svg viewBox="0 0 56 18">
+              <text x="0" y="10">
+                <tspan x="0" y="5" class="playerFirstname">{{ player.firstname }}</tspan>
+                <tspan x="0" y="12" class="playerLastname">{{ player.lastname }}</tspan>
+              </text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="positionHeader">Forwards</div>
+<div class="playersRow">
+  <div ng-repeat="player in team.players" ng-if="player.position=='Forward'" class="playersColumn">
+    <a ui-sref="home">
+      <div class="playersCard">
+        <div class="grid-container">
+          <div class="item1">
+            <svg viewBox="0 0 56 18">
+              <text x="5" y="25" class="squadNumber" >{{ player.squadnumber }}</text>
+            </svg>
+          </div>
+          <div class="item2"><img src="{{ player.image }}" alt="Image" class="playerCardPortrait"></div>
+          <div class="item3">
+            <svg viewBox="0 0 56 18">
+              <text x="0" y="10">
+                <tspan x="0" y="5" class="playerFirstname">{{ player.firstname }}</tspan>
+                <tspan x="0" y="12" class="playerLastname">{{ player.lastname }}</tspan>
+              </text>
+            </svg>
           </div>
         </div>
       </div>

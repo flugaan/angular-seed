@@ -1,9 +1,9 @@
 (function(){
 
   angular.module('app')
-    .controller('TeamController', ['$state', 'firebaseService', TeamController]);
+    .controller('TeamController', ['$state', 'firebaseService', '$log', TeamController]);
 
-  function TeamController($state, firebaseService){
+  function TeamController($state, firebaseService, $log){
 
     var vm = this;
 
