@@ -27,6 +27,12 @@
       })
       .state('team', {
         url: '/team',
+        templateUrl: '/templates/teamBootstrap.html',
+        controller: 'TeamController',
+        controllerAs: 'team'
+      })
+      .state('teamOld', {
+        url: '/teamOld',
         templateUrl: '/templates/team.html',
         controller: 'TeamController',
         controllerAs: 'team'

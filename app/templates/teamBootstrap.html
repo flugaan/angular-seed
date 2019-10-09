@@ -1,0 +1,149 @@
+
+<h1 class="">Squad Mens Team</h1>
+
+<h3>Goalkeepers</h3>
+<div class="card-deck">
+  <div ng-repeat="player in team.players" ng-if="player.position=='Goalkeeper'" class="card m-3" style="max-width: 400px;">
+
+        <a ui-sref="player({id: player.squadnumber})">
+
+          <div class="row no-gutters bg-light">
+            <div class="col-7">
+              <img src="{{ player.image }}" class="card-img ">
+            </div>
+            <div class="col-5">
+              <div class="">
+                <svg viewBox="0 0 20 20" class="">
+                  <text x="100%" y="17" z="1" text-anchor="end" style="font-size: 18px;" >{{ player.squadnumber }}</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+        <div class="row no-gutters">
+          <div class="col-12">
+            <div class="card-body">
+              <svg viewBox="0 0 100 30" class="">
+                <text x="0" y="10">
+                  <tspan x="0" y="7" style="font-size: 6px;">{{ player.firstname }}</tspan>
+                  <tspan x="0" y="24" class="">{{ player.lastname }}</tspan>
+                </text>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        </a>
+
+  </div>
+</div>
+<h3>Defenders</h3>
+  <div class="card-deck">
+    <div ng-repeat="player in team.players" ng-if="player.position=='Defender'" class="card m-3" style="max-width: 400px;">
+
+          <a ui-sref="player({id: player.squadnumber})">
+
+            <div class="row no-gutters bg-light">
+              <div class="col-7">
+                <img src="{{ player.image }}" class="card-img ">
+              </div>
+              <div class="col-5">
+                <div class="">
+                  <svg viewBox="0 0 20 20" class="">
+                    <text x="100%" y="17" z="1" text-anchor="end" style="font-size: 18px;" >{{ player.squadnumber }}</text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+          <div class="row no-gutters">
+            <div class="col-12">
+              <div class="card-body">
+                <svg viewBox="0 0 100 30" class="">
+                  <text x="0" y="10">
+                    <tspan x="0" y="7" style="font-size: 6px;">{{ player.firstname }}</tspan>
+                    <tspan x="0" y="24" class="">{{ player.lastname }}</tspan>
+                  </text>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          </a>
+
+    </div>
+  </div>
+
+  <h3>Midfielders</h3>
+    <div class="card-deck">
+      <div ng-repeat="player in team.players" ng-if="player.position=='Midfielder'" class="card m-3" style="max-width: 400px;">
+
+            <a ui-sref="player({id: player.squadnumber})">
+
+              <div class="row no-gutters bg-light">
+                <div class="col-7">
+                  <img src="{{ player.image }}" class="card-img ">
+                </div>
+                <div class="col-5">
+                  <div class="">
+                    <svg viewBox="0 0 20 20" class="">
+                      <text x="100%" y="17" z="1" text-anchor="end" style="font-size: 18px;" >{{ player.squadnumber }}</text>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+            <div class="row no-gutters">
+              <div class="col-12">
+                <div class="card-body">
+                  <svg viewBox="0 0 100 30" class="">
+                    <text x="0" y="10">
+                      <tspan x="0" y="7" style="font-size: 6px;">{{ player.firstname }}</tspan>
+                      <tspan x="0" y="24" class="">{{ player.lastname }}</tspan>
+                    </text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            </a>
+
+      </div>
+    </div>
+
+    <h3>Forwards</h3>
+      <div class="card-deck">
+        <div ng-repeat="player in team.players" ng-if="player.position=='Forward'" class="card m-3" style="max-width: 400px;">
+
+              <a ui-sref="player({id: player.squadnumber})">
+
+                <div class="row no-gutters bg-light">
+                  <div class="col-7">
+                    <img src="{{ player.image }}" class="card-img ">
+                  </div>
+                  <div class="col-5">
+                    <div class="">
+                      <svg viewBox="0 0 20 20" class="">
+                        <text x="100%" y="17" z="1" text-anchor="end" style="font-size: 18px;" >{{ player.squadnumber }}</text>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+              <div class="row no-gutters">
+                <div class="col-12">
+                  <div class="card-body">
+                    <svg viewBox="0 0 100 30" class="">
+                      <text x="0" y="10">
+                        <tspan x="0" y="7" style="font-size: 6px;">{{ player.firstname }}</tspan>
+                        <tspan x="0" y="24" class="">{{ player.lastname }}</tspan>
+                      </text>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              </a>
+
+        </div>
+      </div>

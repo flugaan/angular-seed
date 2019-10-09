@@ -11,6 +11,8 @@
     "angular-loader": "^1.7.5",
     "angular-route": "^1.7.5",
     "angularfire": "^2.3.0",
+    "bootstrap": "^4.3.1",
+    "firebase": "^7.1.0",
     "html5-boilerplate": "0.0.1"
   },
   "devDependencies": {
